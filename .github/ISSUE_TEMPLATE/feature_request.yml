@@ -1,0 +1,45 @@
+name: Özellik isteği
+description: Sudoku Solver için yeni bir özellik veya iyileştirme önerin.
+title: "[Öneri]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: Önerinizi mümkün olduğunca somut anlatmanız değerlendirmeyi kolaylaştırır.
+
+  - type: textarea
+    id: need
+    attributes:
+      label: İhtiyaç veya sorun
+      description: Bu öneri hangi kullanım ihtiyacını karşılıyor?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerilen çözüm
+      description: Özelliğin nasıl çalışmasını beklediğinizi açıklayın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatifler
+      description: Düşündüğünüz başka çözümler varsa belirtin.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Ek bilgi
+      description: Varsa örnek, ekran görüntüsü veya benzer uygulama bağlantısı ekleyin.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Ön kontrol
+      options:
+        - label: Benzer bir önerinin daha önce açılmadığını kontrol ettim.
+          required: true
