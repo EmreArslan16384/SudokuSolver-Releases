@@ -1,0 +1,70 @@
+name: Hata bildirimi
+description: Sudoku Solver'da karşılaştığınız bir hatayı bildirin.
+title: "[Hata]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirim için teşekkür ederiz. Güvenlik açıklarını burada paylaşmayın; özel güvenlik bildirim kanalını kullanın.
+
+  - type: input
+    id: version
+    attributes:
+      label: Uygulama sürümü
+      description: Ayarlar veya sürüm ekranında görünen sürümü yazın.
+      placeholder: Örn. 1.0.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows sürümü
+      placeholder: Örn. Windows 11 24H2
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Hatanın açıklaması
+      description: Ne olduğunu açık ve kısa biçimde anlatın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Yeniden oluşturma adımları
+      placeholder: |
+        1. Uygulamayı açtım
+        2. ... işlemini yaptım
+        3. ... hatası oluştu
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış
+      description: Bunun yerine ne olmasını bekliyordunuz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Ek bilgi
+      description: Varsa ekran görüntüsü, hata mesajı veya ilgili Sudoku metnini ekleyin.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Ön kontrol
+      options:
+        - label: En son sürümü kullandığımı kontrol ettim.
+          required: true
+        - label: Aynı sorunun daha önce bildirilmediğini kontrol ettim.
+          required: true
